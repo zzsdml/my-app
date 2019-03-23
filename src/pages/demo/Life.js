@@ -1,5 +1,6 @@
 import React from 'react'
 import Child from './Child'
+import './style.less'
 export default class Life extends React.Component{
   constructor(props){
     super(props);
@@ -18,7 +19,7 @@ export default class Life extends React.Component{
       padding: 50
     }
     return(
-      <div style={style}>
+      <div className="content">
         <h1>点击加1</h1>
         <button onClick={this.handleAdd}>点击</button>
         <p>{this.state.count}</p>
