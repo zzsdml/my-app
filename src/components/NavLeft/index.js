@@ -1,5 +1,6 @@
 import React from 'react'
 import menuConfig from './../../config/menuConfig'
+import {Link} from 'react-router-dom'
 import './index.less'
 import { Menu, Icon } from 'antd';
 const SubMenu = Menu.SubMenu;
@@ -23,8 +24,7 @@ export default class NavLeft extends React.Component {
       }
       return (
         <Menu.Item key={item.key}>
-          <Icon type="pie-chart" />
-          <span>{item.title}</span>
+          <Link to={item.key}><Icon type="pie-chart" />{item.title}</Link>
         </Menu.Item> 
       )
 
