@@ -39,16 +39,16 @@ export default class Header extends React.Component {
     return(
       <div className="header">
         <Row className="header-top">
-          <Col span="24">
+          <Col span={24}>
             <span>hello {this.state.name}</span>
             <a href="#">exit</a>
           </Col>
         </Row>
         <Row className="breadcrumb">
-          <Col span="4" className="breadcrumb-title">
+          <Col span={4} className="breadcrumb-title">
             首页
           </Col>
-          <Col span="20" className="breadcrumb-info">
+          <Col span={20} className="breadcrumb-info">
             <span className="date">{this.state.time}</span>
             <span className="weather-detail">晴转多云</span>
           </Col>
